@@ -21,3 +21,15 @@ Memoization recipe
 * These should be very separate processes
 * Don't try to get an optimal approach from the get go
 * Draw the call stack
+
+Progression:
+
+can_sum     "can you do it? yes no?"                DECISION problem
+
+how_sum     "how will you do it?"                   COMBINATORIC problem
+
+best_sum    "what is the 'best' way to do it?"      OPTIMIZATION problem
+
+These 3 have common ground but also some nuance depending on the exact question
+we are trying to answer. These fall under "DYNAMIC PROGRAMMING". Note DP is not
+limited to numbers.
