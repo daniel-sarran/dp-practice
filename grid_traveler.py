@@ -1,4 +1,20 @@
 def grid_traveler(m, n, memo=None):
+    """
+    Pattern: start at top left of grid, and can only move right or down.
+    So for final square, it is the sum of the ways to get to square above, and
+    to the left.
+
+    This can cause a lot of overlap, which can be improved by caching previous
+    calculated values using memoization.
+
+    1) Create brute solution
+    2) Analyze for overlapping subproblems
+    3) Use a table/memo - check if the computed value is in the memo
+    4) If not, assign the computed value to memo at that parameter
+    Note: tuples are kind of hashable, but strings are always hashable -- this
+    solution makes a hashable string out of m and n parameters -- a good tip
+    for future issues with coordinates?
+    """
     key = str(m) + ',' + str(n)
     if memo is None:
         memo = {}

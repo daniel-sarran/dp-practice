@@ -1,0 +1,23 @@
+Memoization recipe
+
+1. Make it work (brute)
+    - Visualize the problem as a tree
+    - There is a large problem that can be broken down into smaller instances of
+    the same problem
+    - Implement the tree using RECURSION
+    - Test it: should still pass, maybe times out
+
+2. Make it efficient (optimize)
+    - Add a memo object
+        { function key: return value }
+    - Pass memo as a parameter
+    - Add a base case to return memo values ( keep all the old base cases )
+    - `Memo fetch` base case - if n in memo
+    - Store return values into the memo
+        - Previously we RETURNED the recursive calls
+        - Now STORE the recursive calls
+        - Return the stored value
+
+* These should be very separate processes
+* Don't try to get an optimal approach from the get go
+* Draw the call stack
