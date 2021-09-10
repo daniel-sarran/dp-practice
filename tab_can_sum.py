@@ -61,6 +61,8 @@ def can_sum(target, numbers):
         if not table[i]:
             continue
 
+        # For each "coin", if the next sum (which is based on index) can be
+        # made (and is in array bounds) then change those to True
         for choice in numbers:
             if i + choice > target:
                 continue
