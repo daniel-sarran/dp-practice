@@ -58,6 +58,9 @@ Array   []  none none [3]  [4]  [5] [3,3] [3,4]
                        create change for 7.
                        This will change [3,4] to [4,3]. That's fine.
 
+target = m
+length of numbers = n
+
 Time complexity - we need to go through M table values
     At each table value, I need to do N operations
     So, that is O(m * n).
@@ -98,4 +101,8 @@ def how_sum(target, numbers):
 
 
 if __name__ == '__main__':
-    print(how_sum(7, [5, 3, 4]))
+    print(how_sum(7, [2, 3]))
+    print(how_sum(7, [5, 3, 4, 7]))
+    print(how_sum(7, [2, 4]))
+    print(how_sum(8, [2, 3, 5]))
+    print(how_sum(300, [7, 14]))
