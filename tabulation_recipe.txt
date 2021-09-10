@@ -1,0 +1,12 @@
+Tabulation Recipe
+
+- Visualize the problem as a table
+- Size the table based on the inputs
+    e.g. Fibonacci of n, we made the table n elements long
+    e.g. Grid Traveler, represents a grid, we had to create a 2-dimensional
+         table
+- Initialize the table with default values
+    e.g. if you return a number, initialize with a number
+    e.g. if you return a boolean, consider True or False
+- Iterate through the table
+- Fill further positions based on the current position
