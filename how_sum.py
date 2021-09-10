@@ -42,7 +42,9 @@ example:
             There are m keys
             So m keys * m length array
 """
-#def how_sum(target, arr):
+
+
+# def how_sum(target, arr):
 #    if target == 0:
 #        return []
 #    
@@ -69,7 +71,7 @@ def how_sum(target, arr, memo=None):
 
     if target == 0:
         return []
-    
+
     if target < 0:
         return None
 
@@ -77,7 +79,7 @@ def how_sum(target, arr, memo=None):
     for val in arr:
         remainder = target - val
         result = how_sum(remainder, arr, memo)
-        if result != None:
+        if result is not None:
             result.append(val)
             memo[target] = result
             return memo[target]
@@ -85,11 +87,10 @@ def how_sum(target, arr, memo=None):
     memo[target] = None
     return None
 
+
 if __name__ == '__main__':
     print(how_sum(7, [2, 3]))
     print(how_sum(7, [5, 3, 4, 7]))
     print(how_sum(7, [2, 4]))
     print(how_sum(8, [2, 3, 5]))
     print(how_sum(300, [7, 14]))
-
-
